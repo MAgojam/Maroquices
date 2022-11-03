@@ -1,0 +1,26 @@
+---
+name:  ICVARS
+title: Confidence Interval for Variances
+menuGroup: Maroquices
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: dep
+      title: Dependent
+      type: Variable
+
+    - name: group
+      title: Groups
+      type: Variable
+      
+    - name: ci
+      type: Number  
+      title: Confidence level
+      min: 0.01
+      max: 0.99
+      default: 0.95
+...

@@ -1,0 +1,30 @@
+---
+name:  ICVARS
+title: Confidence Interval for Variances
+jrs:   '1.1'
+
+items:
+    - name:  text
+      title: Confidence Interval for Variances
+      type:  Preformatted
+      
+    - name:  icvars
+      title: Confidence Interval for Variances
+      type: Table
+      rows:  3
+      columns:
+        - name: var
+          title: ''
+          type: text
+        - name: group
+          title: 'Group'
+          type: text
+        - name: n
+          type: integer
+        - name: Variance
+          type: number
+        - name: Lower
+          type: number
+        - name: Upper
+          type: number
+...

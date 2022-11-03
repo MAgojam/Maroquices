@@ -1,0 +1,54 @@
+---
+name:  POISSTEST
+title: Test and Confidence Intervals for Poisson
+jrs:   '1.1'
+
+items:
+    - name:  text
+      title: Test and Confidence Intervals for Poisson
+      type:  Preformatted
+
+    - name:  poissontest
+      title: Poisson test
+      type: Table
+      rows:  1
+      columns:
+        - name: var
+          title: ''
+          type: text
+        - name: NumberofEvents
+          title: Number of Events
+          type: integer
+        - name: Intervalbase
+          title: Interval
+          type: integer
+        - name: Eventrate
+          title: Event rate
+          type: number      
+        - name: p
+          type: number
+          format: zto,pvalue
+        - name: Lower
+          type: number
+        - name: Upper
+          type: number    
+          
+    - name:  poissonci
+      title: Confidence Intervals for Poisson
+      type: Table
+      rows:  3
+      columns:
+        - name: var
+          title: ''
+          type: text
+        - name: method
+          title: Method
+          type: text    
+        - name: lambda
+          type: number
+        - name: Lower
+          type: number
+        - name: Upper
+          type: number
+
+...

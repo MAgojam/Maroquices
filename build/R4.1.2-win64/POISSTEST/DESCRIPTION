@@ -1,0 +1,12 @@
+Package: POISSTEST
+Type: Package
+Title: Poisson test and Confidence Intervals for Poisson lambda
+Version: 0.0.0
+Author: Jo<e3>o Mar<f4>co
+Maintainer: <jpmaroco@gmail.com>
+Description: Poisson test and confidence interval
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: jmvcore (>= 0.8.5), R6, DescTools
+Built: R 4.1.2; ; 2022-11-03 12:13:39 UTC; windows
