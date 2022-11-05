@@ -1,0 +1,12 @@
+Package: Extra
+Type: Package
+Title: Extra
+Version: 0.0.0
+Author: João Marôco
+Maintainer: The package maintainer <jpmaroco@gmail.com>
+Description: Jamovi modules para acompanhar o livro
+License: free
+Encoding: UTF-8
+LazyData: true
+Imports: jmvcore (>= 0.8.5), R6, BSDA, DescTools
+Built: R 4.1.2; ; 2022-11-04 19:21:10 UTC; windows

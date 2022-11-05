@@ -1,7 +1,7 @@
 ---
 name:  POISSTEST
 title: Test and Confidence Intervals for Poisson
-menuGroup: Maroquices
+menuGroup: Extra
 version: '1.0.0'
 jas: '1.2'
 

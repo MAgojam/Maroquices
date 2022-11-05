@@ -1,0 +1,10 @@
+exportPattern("^[[:alpha:]]+")
+
+export(ICVARSClass)
+export(ICVARSOptions)
+
+export(MEDIANTESTClass)
+export(MEDIANTESTOptions)
+
+export(POISSTESTClass)
+export(POISSTESTOptions)

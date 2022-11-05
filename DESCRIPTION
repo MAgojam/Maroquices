@@ -1,6 +1,6 @@
-Package: Maroquices
+Package: Extra
 Type: Package
-Title: Maroquices
+Title: Extra
 Version: 0.0.0
 Author: João Marôco
 Maintainer: The package maintainer <jpmaroco@gmail.com>

@@ -12,7 +12,7 @@ MEDIANTESTOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             conf = 0.95, ...) {
 
             super$initialize(
-                package="Maroquices",
+                package="Extra",
                 name="MEDIANTEST",
                 requiresData=TRUE,
                 ...)
@@ -103,7 +103,7 @@ MEDIANTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 options=options,
                 name="medianci",
                 title="Confidence Intervals for Median",
-                rows=3,
+                rows=4,
                 columns=list(
                     list(
                         `name`="type", 
@@ -128,7 +128,7 @@ MEDIANTESTBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
     public = list(
         initialize = function(options, data=NULL, datasetId="", analysisId="", revision=0) {
             super$initialize(
-                package = "Maroquices",
+                package = "Extra",
                 name = "MEDIANTEST",
                 version = c(1,0,0),
                 options = options,

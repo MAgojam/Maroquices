@@ -61,17 +61,31 @@ MEDIANTESTClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
                 
                 dtci <- data.frame(results$Confidence.Intervals)
                 
+
                 tableci <- self$results$medianci
                 
                 for (i in 1:nrow(dtci)){
                 tableci$setRow(rowNo=i, values=list(
                     type=row.names(dtci)[i],
                     ConfLevel=dtci$Conf.Level[i],
-                    Eventrate=results$estimate,
-                    p=pval,
                     Lower=dtci$L.E.pt[i],
                     Upper=dtci$U.E.pt[i]
                 ))
+                    
+                    # Aproximate IC
+                    # Aproximate IC
+                    z <- qnorm(1-(1-self$options$conf)/2)
+                    n <- length(self$data[,dep])
+                    rLImed <- (n*0.5-z*sqrt(n*0.5*(1-0.5)))|>round(0)
+                    rLSmed <- (n*0.5+z*sqrt(n*0.5*(1-0.5)))|>round(0)
+                    conflevass <- pbinom(rLSmed,n,0.5)-pbinom(rLImed,n,0.5)
+                    
+                    tableci$setRow(rowNo=4, values=list(
+                        type="Asymptotic",
+                        ConfLevel=conflevass,
+                        Lower=sort(self$data[,dep],)[rLImed],
+                        Upper=sort(self$data[,dep],)[rLSmed]
+                    ))
                 }
                 
               }

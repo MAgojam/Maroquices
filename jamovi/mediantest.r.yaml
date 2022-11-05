@@ -31,7 +31,7 @@ items:
     - name:  medianci
       title: Confidence Intervals for Median
       type: Table
-      rows:  3
+      rows:  4
       columns:
         - name: type
           title: Type

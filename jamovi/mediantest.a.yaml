@@ -1,7 +1,7 @@
 ---
 name:  MEDIANTEST
 title: Test and Confidence Intervals for the Median
-menuGroup: Maroquices
+menuGroup: Extra
 version: '1.0.0'
 jas: '1.2'
 

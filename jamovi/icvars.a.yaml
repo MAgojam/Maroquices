@@ -1,7 +1,7 @@
 ---
 name:  ICVARS
 title: Confidence Interval for Variances
-menuGroup: Maroquices
+menuGroup: Extra
 version: '1.0.0'
 jas: '1.2'
 

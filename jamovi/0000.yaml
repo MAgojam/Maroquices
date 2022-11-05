@@ -1,10 +1,10 @@
 ---
-title: Maroquices
-name: Maroquices
+title: Extra
+name: Extra
 version: 0.0.1
 jms: '1.0'
 authors:
-  - João Maroco
+  - João Marôco
 maintainer: The package maintainer <jpmaroco@gmail.com>
 date: '2022-11-04'
 type: R
@@ -12,18 +12,18 @@ description: jamovi modules for the book.
 analyses:
   - title: Confidence Interval for Variances
     name: ICVARS
-    ns: Maroquices
-    menuGroup: Maroquices
+    ns: Extra
+    menuGroup: Extra
     menuTitle: Confidence Interval for Variances
   - title: Test and Confidence Intervals for the Median
     name: MEDIANTEST
-    ns: Maroquices
-    menuGroup: Maroquices
+    ns: Extra
+    menuGroup: Extra
     menuTitle: Test and Confidence Intervals for the Median
   - title: Test and Confidence Intervals for Poisson
     name: POISSTEST
-    ns: Maroquices
-    menuGroup: Maroquices
+    ns: Extra
+    menuGroup: Extra
     menuTitle: Test and Confidence Intervals for Poisson
 usesNative: true
 minApp: 1.0.8
