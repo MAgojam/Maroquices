@@ -1,0 +1,41 @@
+BoxCox                  Box and Cox (1964) data.
+CardioRiskFactors       Cardiovascular risk factors
+Rfit-package            Rank-Based Estimates and Inference for Linear
+                        Models
+baseball                Baseball Card Data
+bbsalaries              Baseball Salaries
+confintadjust           Confidence interval adjustment methods
+disp                    Jaeckel's Dispersion Function
+drop.test               Drop (Reduction) in Dispersion Test
+ffa                     Free Fatty Acid Data
+getScores-methods       ~~ Methods for Function getScores ~~
+getScoresDeriv-methods
+                        ~~ Methods for Function getScoresDeriv ~~
+gettau                  Estimate of the scale parameter tau
+grad                    Calculate the Gradiant of Jaeckel's Dispersion
+                        Function
+hstarreadyscr           Internal Functions for Estimating tau
+jaeckel                 Function to Minimize Jaeckel's Dispersion
+                        Function
+kwayr                   Internal Functions for K-Way analysis of
+                        variance
+oneway.rfit             Rank-based Oneway Analysis of Variance
+param-class             Class "param"
+print.rfit              Rfit Internal Print Functions
+quail                   Quail Data
+raov                    R ANOVA
+rfit                    Rank-based Estimates of Regression Coefficients
+rstudent.rfit           Studentized Residuals for Rank-Based Regression
+scores-class            Class "scores"
+serumLH                 Serum Level of luteinizing hormone (LH)
+signedrank              Signed-Rank Estimate of Location (Intercept)
+summary.oneway.rfit     Provides a summary for the oneway anova based
+                        on an R fit.
+summary.rfit            Summarize Rank-Based Linear Model Fits
+taustar                 Estimate of the Scale Parameter taustar
+telephone               Telephone Data
+vcov.rfit               Variance-Covariance Matrix for Rank-Based
+                        Regression
+wald.test.overall       Overall Wald test
+walsh                   Walsh Averages
+wscores                 All Scores

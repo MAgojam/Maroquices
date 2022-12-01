@@ -1,0 +1,98 @@
+---
+name:  KWTest
+title: ANOVA em Ordens de Kruskal-Wallis
+jrs:   '1.1'
+
+items:
+    - name: kw
+      title: ANOVA em ordens de Kruskal-Wallis
+      type: Table
+      rows: 1
+      visible: True  
+      columns:
+        - name: var
+          title: "Var. Dependente"
+          type: text
+        - name: chiSq
+          title: H
+          type: number
+        - name: df
+          title: df
+          type: integer
+        - name: p
+          title: Pasymp
+          type: number
+          format: zto,pvalue
+        - name: px
+          title: Pexact
+          type: number  
+        - name: es
+          title: η²
+          type: number
+    
+    - name: posts
+      title: Testes Post-hoc
+      type: Preformatted
+    
+    - name: dunn
+      title: "Teste Post-hoc de Dunn para amostras independentes"
+      type: Table
+      rows: nComps
+      visible: False   
+      columns:
+        - name: var
+          title: 'Comparação'
+          type: text
+        - name: Z
+          type: number
+        - name: p
+          type: number
+          format: zto,pvalue
+        - name: Padj
+          title: p<sub>aj<\aj>
+          type: number
+          format: zto,pvalue
+          
+    - name: DSCF
+      title: "Teste Post-hoc de DSCF"
+      type: Table
+      rows: nComps
+      visible: False   
+      columns:
+        - name: var
+          title: 'Comparação'
+          type: text
+        - name: W
+          type: number
+        - name: P
+          type: number
+          format: zto,pvalue
+          
+    - name: iman
+      title: "Testes Post-hoc de Iman-Conover"
+      type: Table
+      rows: nComps
+      visible: False   
+      columns:
+        - name: var
+          title: 'Comparação'
+          type: text
+        - name: t
+          type: number
+        - name: P
+          type: number
+          format: zto,pvalue
+        - name: Padj
+          title: Paj
+          type: number
+          format: zto,pvalue   
+
+    - name: plot
+      title: Box Plots
+      type: Image
+      visible: False   
+      width:  450
+      height: 300
+      renderFun: .plot    
+
+...

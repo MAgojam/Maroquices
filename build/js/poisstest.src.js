@@ -44,7 +44,10 @@ view.layout = ui.extend({
 					typeName: 'RadioButton',
 					name: "switchs",
 					optionName: "switch",
-					optionPart: "fromsummary"
+					optionPart: "fromsummary",
+					events: [
+						{ execute: require('./poisstest.events').onChange_switch }
+					]
 				}
 			]
 		},
@@ -100,13 +103,15 @@ view.layout = ui.extend({
 									type: DefaultControls.TextBox,
 									typeName: 'TextBox',
 									name: "lambda",
-									format: FormatDef.number
+									format: FormatDef.number,
+									enable: "(switch:fromsummary)"
 								},
 								{
 									type: DefaultControls.TextBox,
 									typeName: 'TextBox',
 									name: "intervalValue",
-									format: FormatDef.number
+									format: FormatDef.number,
+									enable: "(switch:fromsummary)"
 								}
 							]
 						}

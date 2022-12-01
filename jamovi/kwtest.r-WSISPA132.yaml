@@ -1,0 +1,53 @@
+---
+name:  KWTest
+title: Kruskal-Wallis with Dunn Post-Hoc
+jrs:   '1.1'
+
+items:
+    - name:  text
+      title: Kruskal-Wallis with Dunn Post-Hoc
+      type:  Preformatted
+      
+    - name: kw
+      title: Kruskal-Wallis ANOVA on Ranks
+      type: Table
+      rows: 1
+      columns:
+        - name: var
+          title: "Dep. Variable"
+          type: text
+        - name: chiSq
+          title: H
+          type: number
+        - name: df
+          title: df
+          type: integer
+        - name: p
+          title: Pasymp
+          type: number
+          format: zto,pvalue
+        - name: px
+          title: Pexact
+          type: number  
+        - name: es
+          title: η²
+          type: number
+
+    - name: dunn
+      title: Dunn's Post-hoc Test for Independent Samples
+      type: Table
+      rows: nComps
+      columns:
+        - name: var
+          title: 'Comparison'
+          type: text
+        - name: Z
+          type: number
+        - name: P
+          type: number
+          format: zto,pvalue
+        - name: Padj
+          type: number
+          format: zto,pvalue
+    
+...

@@ -1,0 +1,131 @@
+CorrUpperBound          Computes the upper bound for the null
+                        correlation between two overlapping signed rank
+                        statistics.
+HoeffD                  Function to compute Hoeffding's D statistic for
+                        small sample sizes.
+HollBivSym              Hollander Bivariate Symmetry
+MillerJack              Miller Jackknife
+RFPW                    Randles-Fligner-Policello-Wolfe
+RSS                     Ranked-Set Sample
+cAnsBrad                Function to compute a critical value for the
+                        Ansari-Bradley C distribution.
+cBohnWolfe              Function to compute a critical value for the
+                        Bohn-Wolfe U distribution.
+cDurSkiMa               Computes a critical value for the Durbin,
+                        Skillings-Mack D distribution.
+cFligPoli               Computes a critical value for the
+                        Fligner-Policello U distribution.
+cFrd                    Computes a critical value for the Friedman,
+                        Kendall-Babington Smith S distribution.
+cHaySton                Computes a critical value for the Hayter-Stone
+                        W* distribution.
+cHayStonLSA             Computes a critical value for the Hayter-Stone
+                        W* asymptotic distribution.
+cHollBivSym             Hollander Bivariate Symmetry
+cJCK                    Computes a critical value for the
+                        Jonckheere-Terpstra J distribution.
+cKW                     Computes a critical value for the
+                        Kruskal-Wallis H distribution.
+cKolSmirn               Computes a critical value for the
+                        Kolmogorov-Smirnov J distribution.
+cLepage                 Computes a critical value for the Lepage D
+                        distribution.
+cMackSkil               Computes a critical value for the
+                        Mack-Skillings MS distribution.
+cMaxCorrNor             Quantile function for the maximum of k N(0,1)
+                        random variables with common correlation rho.
+cNDWol                  Function to compute a critical value for the
+                        Nemenyi, Damico-Wolfe Y distribution.
+cNWWM                   Computes a critical value for the Nemenyi,
+                        Wilcoxon-Wilcox, Miller R* distribution.
+cPage                   Function to compute a critical value for the
+                        Page L distribution.
+cRangeNor               Quantile function for the range of k
+                        independent N(0,1) random variables.
+cSDCFlig                Computes a critical value for the Dwass, Steel,
+                        Critchlow-Fligner W distribution.
+cSkilMack               Computes a critical value for the
+                        Skillings-Mack SM distribution.
+cUmbrPK                 Computes a critical value for the Mack-Wolfe
+                        Peak Known A_p distribution.
+cUmbrPU                 Computes a critical value for the Mack-Wolfe
+                        Peak Unknown A_p-hat distribution.
+cWNMT                   Computes a critical value for the Wilcoxon,
+                        Nemenyi, McDonald-Thompson R distribution.
+ch.ro                   Campbell-Hollander
+dmrl.mc                 Hollander-Proschan
+e.mc                    Function to compute the Monte Carlo P-value for
+                        the observed Epstein E statistic
+ecdf.ks.CI              Kolmogorov's Confidence Band
+epstein                 Epstein
+ferg.df                 Ferguson's Estimator
+kendall.ci              Function to produce a confidence interval for
+                        Kendall's tau.
+klefsjo.ifr             Klefsjo's IFR
+klefsjo.ifr.mc          Function to compute the Monte Carlo P-value for
+                        the observed Klefsjo's A* statistic.
+klefsjo.ifra            Klefsjo's IFRA
+klefsjo.ifra.mc         Function to compute the Monte Carlo P-value for
+                        the observed Klefsjo's B* statistic.
+kolmogorov              Kolmogorov
+mblm                    Fitting Median-Based Linear Models (from 'mblm'
+                        oackage)
+mrl                     Mean Residual Life
+multCh7                 Possible arrangements by row for a matrix
+multCh7SM               Possible arrangements by row a matrix, where NA
+                        values are ignored
+multComb                Combinations of the first n integers in k
+                        groups
+nb.mc                   Function to compute the Monte Carlo P-value for
+                        the observed Hollander-Proschan T statistic.
+newbet                  Hollander-Proschan T*
+owa                     Ordered Walsh Averages
+pAnsBrad                Function to compute the P-value for the
+                        observed Ansari-Bradley C statistic.
+pBohnWolfe              Function to compute the P-value for the
+                        observed Bohn-Wolfe U statistic.
+pDurSkiMa               Durbin, Skillings-Mack
+pFligPoli               Fligner-Policello
+pFrd                    Function to compute the P-value for the
+                        observed Friedman, Kendall-Babington Smith S
+                        statistic.
+pHaySton                Hayter-Stone
+pHayStonLSA             Hayter-Sone LSA
+pHoeff                  Hoeffding's D
+pHollBivSym             Hollander Bivariate Symmetry
+pJCK                    Function to compute the P-value for the
+                        observed Jonckheere-Terpstra J statistic.
+pKW                     Kruskal-Wallis
+pKolSmirn               Function to copute the P-value for the observed
+                        Kolmogorov-Smirnov J statistic.
+pLepage                 Lepage
+pMackSkil               Mack-Skillings
+pMaxCorrNor             Function to compute the upper tail probability
+                        of the maximum of k N(0,1) random variables
+                        with common correlation for a given cutoff.
+pNDWol                  Nemenyi, Damico-Wolfe
+pNWWM                   Nemenyi, Wilcoxon-Wilcox, Miller
+pPage                   Page
+pPairedWilcoxon         Paired Wilcoxon
+pRangeNor               Function to compute the upper-tail probability
+                        of the range of k independent N(0,1) random
+                        variables for a given cutoff.
+pSDCFlig                Dwass, Steel, Critchlow, Fligner
+pSkilMack               Skillings-Mack
+pUmbrPK                 Function to compute the P-value for the
+                        observed Mack-Wolfe Peak Known A_p
+                        distribution.
+pUmbrPU                 Mack-Wolfe Peak Unknown
+pWNMT                   Wilcoxon, Nemenyi, McDonald-Thompson
+print.NSM3Ch5p          Methods to control displayed output of NSM3
+                        tests.
+qKolSmirnLSA            Quantile function for the asymptotic
+                        distribution of the Kolmogorov-Smirnov J*
+                        statistic.
+rhythmicity             Dataset
+sen.adichie             Function to test for parallel lines.
+svr.df                  Susarla-van Ryzin
+tc                      Guess-Hollander-Proschan
+theil                   Function to estimate and perform tests on the
+                        slope and intercept of a simple linear model.
+zelen.test              Function to perform Zelen's test.

@@ -1,0 +1,29 @@
+useDynLib(Rfit, .registration=TRUE)
+
+# Export all names
+exportPattern(".")
+
+# Import all packages listed as Imports or Depends
+import(
+  methods
+)
+
+importFrom("stats","rstudent")
+importFrom("stats", "fitted.values", "hat", "lsfit", "mad", "median",
+     "model.frame", "model.matrix", "model.response", "optim",
+     "pf", "printCoefmat", "pt", "qnorm", "qt", "qtukey",
+     "residuals", "sd", "vcov")
+importFrom("stats", "coef", "lm")
+
+S3method(print,drop.test)
+S3method(print,oneway.rfit) 
+S3method(print,raov)
+S3method(print,rfit)
+S3method(print,summary.oneway.rfit) 
+S3method(print,summary.rfit) 
+S3method(rfit,default)
+S3method(rstudent,rfit)
+S3method(summary,oneway.rfit) 
+S3method(summary,rfit) 
+S3method(vcov,rfit)
+

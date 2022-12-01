@@ -1,0 +1,65 @@
+---
+name:  KWTest
+title: "ANOVA em Ordens de Kruskal-Wallis com testes Post-hoc"
+menuGroup: Extra
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: dep
+      title: "Variável Dependente"
+      type: Variable
+      required: true
+      suggested:
+        - continuous
+        - ordinal
+      permitted:
+        - numeric
+      description:
+          ui: >
+            A variável dependente. Tem que ser pelo menos ordinal.
+          R: >
+            A variável dependente. Tem que ser pelo menos ordinal.
+
+    - name: group
+      title: "Variável de Agrupamento"
+      type: Variable
+      required: true
+      suggested:
+        - nominal
+        - ordinal
+      description:
+          ui: >
+            A variável independente. Nominal ou ordinal.
+          R: >
+            A variável independente. Nominal ou ordinal..
+
+    - name: posts
+      title: Testes Post-hoc
+      type: List
+      options:
+        - Nenhum
+        - Dunn
+        - Iman-Conover
+        - DSCF
+      default: "Nenhum"
+      description:
+          ui: >
+            Faz testes post-hoc.
+          R: >
+            Teste de Dunn sem correção e com correção a escolher (Bonferroni-Dunn é a mais usual)
+
+    - name: method
+      title: "Correção p-value de Dunn"
+      type: List
+      options:
+        - title: Bonferroni
+          name:  bonferroni
+        - title: Sidak
+          name:  sidak
+        - title: Holm
+          name:  holm
+...

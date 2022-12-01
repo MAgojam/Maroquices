@@ -8,5 +8,6 @@ Description: Jamovi modules para acompanhar o livro
 License: free
 Encoding: UTF-8
 LazyData: true
-Imports: jmvcore (>= 0.8.5), R6, BSDA, DescTools
-Built: R 4.1.2; ; 2022-11-04 19:21:10 UTC; windows
+Imports: jmvcore (>= 0.8.5), R6, BSDA, DescTools, FSA, coin, NSM3,
+        conover.test
+Built: R 4.1.2; ; 2022-12-01 19:47:57 UTC; windows

@@ -25,6 +25,11 @@ analyses:
     ns: Extra
     menuGroup: Extra
     menuTitle: Test and Confidence Intervals for Poisson
+  - title: ANOVA em Ordens de Kruskal-Wallis com testes Post-hoc
+    name: KWTest
+    ns: Extra
+    menuGroup: Extra
+    menuTitle: ANOVA em Ordens de Kruskal-Wallis com testes Post-hoc
 usesNative: true
 minApp: 1.0.8
 

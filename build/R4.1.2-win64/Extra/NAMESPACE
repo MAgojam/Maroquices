@@ -8,3 +8,6 @@ export(MEDIANTESTOptions)
 
 export(POISSTESTClass)
 export(POISSTESTOptions)
+
+export(KWTestClass)
+export(KWTestOptions)
