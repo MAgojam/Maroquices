@@ -10,4 +10,4 @@ Encoding: UTF-8
 LazyData: true
 Imports: jmvcore (>= 0.8.5), R6, BSDA, DescTools, FSA, coin, NSM3,
         conover.test
-Built: R 4.1.2; ; 2022-12-01 19:47:57 UTC; windows
+Built: R 4.1.2; ; 2022-12-01 21:54:29 UTC; windows

@@ -51,9 +51,11 @@ options:
             Faz testes post-hoc.
           R: >
             Teste de Dunn sem correção e com correção a escolher (Bonferroni-Dunn é a mais usual)
+            
+            
 
     - name: method
-      title: "Correção p-value de Dunn"
+      title: "Correção p-value de Dunn/Iman"
       type: List
       options:
         - title: Bonferroni
