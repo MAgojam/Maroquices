@@ -90,6 +90,9 @@ KWTestResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 title="ANOVA em ordens de Kruskal-Wallis",
                 rows=1,
                 visible=TRUE,
+                clearWith=list(
+                    "dep",
+                    "group"),
                 columns=list(
                     list(
                         `name`="var", 

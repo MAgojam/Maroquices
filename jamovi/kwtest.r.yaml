@@ -8,7 +8,10 @@ items:
       title: ANOVA em ordens de Kruskal-Wallis
       type: Table
       rows: 1
-      visible: True  
+      visible: True 
+      clearWith:
+        - dep
+        - group
       columns:
         - name: var
           title: "Var. Dependente"
