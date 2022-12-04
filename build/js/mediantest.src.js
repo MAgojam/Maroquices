@@ -3,7 +3,7 @@
 
 'use strict';
 
-const options = [{"name":"data","type":"Data"},{"name":"dep","title":"Dependent Variable","type":"Variable"},{"name":"alt","title":"Alternative hypothesis","type":"List","options":[{"title":"Not equal","name":"two.sided"},{"title":"Greater","name":"greater"},{"title":"Smaller","name":"less"}],"default":"two.sided"},{"name":"testvalue","title":"Test Value","type":"Number"},{"name":"conf","title":"Confidence level","type":"Number","min":0,"max":1,"default":0.95}];
+const options = [{"name":"data","type":"Data"},{"name":"dep","title":"Variável Dependente","type":"Variable"},{"name":"alt","title":"Hipótese Alternativa","type":"List","options":[{"title":"Bilateral","name":"two.sided"},{"title":"Maior","name":"greater"},{"title":"Menor","name":"less"}],"default":"two.sided"},{"name":"testvalue","title":"Valor de Teste","type":"Number"},{"name":"conf","title":"Nível de Confiança","type":"Number","min":0,"max":1,"default":0.95}];
 
 const view = function() {
     
@@ -21,7 +21,7 @@ const view = function() {
 
 view.layout = ui.extend({
 
-    label: "Test and Confidence Intervals for the Median",
+    label: "Teste e Intervalo de Confiança para a Mediana",
     jus: "3.0",
     type: "root",
     stage: 0, //0 - release, 1 - development, 2 - proposed
@@ -35,7 +35,7 @@ view.layout = ui.extend({
 				{
 					type: DefaultControls.TargetLayoutBox,
 					typeName: 'TargetLayoutBox',
-					label: "Dependent Variable",
+					label: "Variável Dependente",
 					controls: [
 						{
 							type: DefaultControls.VariablesListBox,

@@ -68,15 +68,15 @@ MEDIANTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             super$initialize(
                 options=options,
                 name="",
-                title="Test and Confidence Intervals for the Median")
+                title="Teste e Intervalo de Confiança para a Mediana")
             self$add(jmvcore::Preformatted$new(
                 options=options,
                 name="text",
-                title="Test and Confidence Intervals for the Median"))
+                title="Teste e Intervalo de Confian\u00E7a para a Mediana"))
             self$add(jmvcore::Table$new(
                 options=options,
                 name="mediantest",
-                title="Median test",
+                title="Teste Mediana",
                 rows=1,
                 columns=list(
                     list(
@@ -85,9 +85,11 @@ MEDIANTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                         `type`="text"),
                     list(
                         `name`="Median", 
+                        `title`="Mediana", 
                         `type`="number"),
                     list(
                         `name`="Statistic", 
+                        `title`="Estat\u00EDstica", 
                         `type`="number"),
                     list(
                         `name`="p", 
@@ -95,31 +97,33 @@ MEDIANTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                         `format`="zto,pvalue"),
                     list(
                         `name`="Lower", 
+                        `title`="Lim. Inf.", 
                         `type`="number"),
                     list(
                         `name`="Upper", 
+                        `title`="Lim. Sup.", 
                         `type`="number"))))
             self$add(jmvcore::Table$new(
                 options=options,
                 name="medianci",
-                title="Confidence Intervals for Median",
+                title="Intervalos de Confian\u00E7a para a Mediana",
                 rows=4,
                 columns=list(
                     list(
                         `name`="type", 
-                        `title`="Type", 
+                        `title`="Tipo", 
                         `type`="text"),
                     list(
                         `name`="ConfLevel", 
-                        `title`="Confidence Level", 
+                        `title`="N\u00EDvel de Confian\u00E7a", 
                         `type`="number"),
                     list(
                         `name`="Lower", 
-                        `title`="Lower Limit", 
+                        `title`="Lim. Inf.", 
                         `type`="number"),
                     list(
                         `name`="Upper", 
-                        `title`="Upper Limit", 
+                        `title`="Lim. Sup.", 
                         `type`="number"))))}))
 
 MEDIANTESTBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
@@ -142,7 +146,7 @@ MEDIANTESTBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 requiresMissings = FALSE)
         }))
 
-#' Test and Confidence Intervals for the Median
+#' Teste e Intervalo de Confiança para a Mediana
 #'
 #' 
 #' @param data .

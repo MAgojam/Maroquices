@@ -1,4 +1,4 @@
-title: Test and Confidence Intervals for the Median
+title: Teste e Intervalo de Confiança para a Mediana
 name: MEDIANTEST
 jus: '3.0'
 stage: 0
@@ -9,7 +9,7 @@ children:
     stretchFactor: 1
     children:
       - type: TargetLayoutBox
-        label: Dependent Variable
+        label: Variável Dependente
         children:
           - type: VariablesListBox
             name: dep

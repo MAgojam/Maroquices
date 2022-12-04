@@ -1,6 +1,6 @@
 ---
 name:  POISSTEST
-title: Test and Confidence Intervals for Poisson
+title: "Teste e Intervalo de Confiança para a Poisson"
 jrs:   '1.1'
 
 items:
@@ -9,7 +9,7 @@ items:
       type:  Preformatted
 
     - name:  poissontest
-      title: Poisson test
+      title: "Teste de Poisson"
       type: Table
       rows:  1
       columns:
@@ -17,24 +17,26 @@ items:
           title: ''
           type: text
         - name: NumberofEvents
-          title: Number of Events
+          title: "Número de eventos"
           type: integer
         - name: Intervalbase
-          title: Interval
+          title: Intervalo
           type: integer
         - name: Eventrate
-          title: Event rate
+          title: "Taxa de Eventos"
           type: number      
         - name: p
           type: number
           format: zto,pvalue
         - name: Lower
+          title: "Lim. Inf."
           type: number
         - name: Upper
+          title: "Lim. Inf."
           type: number    
           
     - name:  poissonci
-      title: Confidence Intervals for Poisson
+      title: "Intervalos de Confiança para a Poisson"
       type: Table
       rows:  3
       columns:
@@ -42,13 +44,15 @@ items:
           title: ''
           type: text
         - name: method
-          title: Method
+          title: "Método"
           type: text    
         - name: lambda
           type: number
         - name: Lower
+          title: "Lim. Inf."
           type: number
         - name: Upper
+          title: "Lim. Sup."
           type: number
 
 ...

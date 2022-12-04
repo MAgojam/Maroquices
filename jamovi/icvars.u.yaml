@@ -1,4 +1,4 @@
-title: Confidence Interval for Variances
+title: Intervalo de Confiança para Variâncias
 name: ICVARS
 jus: '3.0'
 stage: 0
@@ -9,14 +9,14 @@ children:
     stretchFactor: 1
     children:
       - type: TargetLayoutBox
-        label: Dependent
+        label: Dependente
         children:
           - type: VariablesListBox
             name: dep
             maxItemCount: 1
             isTarget: true
       - type: TargetLayoutBox
-        label: Groups
+        label: Grupos
         children:
           - type: VariablesListBox
             name: group

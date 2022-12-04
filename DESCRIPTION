@@ -4,7 +4,7 @@ Title: Extra
 Version: 0.0.0
 Author: João Marôco
 Maintainer: The package maintainer <jpmaroco@gmail.com>
-Description: Jamovi modules para acompanhar o livro
+Description: Jamovi modules para acompanhar o livro "Fundamentos de Estatística"
 License: free 
 Encoding: UTF-8
 LazyData: true

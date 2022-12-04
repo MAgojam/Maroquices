@@ -1,6 +1,6 @@
 ---
 name:  MEDIANTEST
-title: Test and Confidence Intervals for the Median
+title: "Teste e Intervalo de Confiança para a Mediana"
 menuGroup: Extra
 version: '1.0.0'
 jas: '1.2'
@@ -10,27 +10,27 @@ options:
       type: Data
 
     - name: dep
-      title: Dependent Variable
+      title: "Variável Dependente"
       type: Variable
 
     - name: alt
-      title: Alternative hypothesis
+      title: "Hipótese Alternativa"
       type: List
       options:
-        - title: Not equal
+        - title: Bilateral
           name:  two.sided
-        - title: Greater
+        - title: Maior
           name:  greater
-        - title: Smaller
+        - title: Menor
           name:  less
       default: two.sided
 
     - name: testvalue
-      title: Test Value
+      title: "Valor de Teste"
       type: Number
       
     - name: conf
-      title: Confidence level
+      title: "Nível de Confiança"
       type: Number
       min: 0.0
       max: 1

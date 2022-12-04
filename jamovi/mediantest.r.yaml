@@ -1,15 +1,15 @@
 ---
 name:  MEDIANTEST
-title: Test and Confidence Intervals for the Median
+title: "Teste e Intervalo de Confiança para a Mediana"
 jrs:   '1.1'
 
 items:
     - name:  text
-      title: Test and Confidence Intervals for the Median
+      title: "Teste e Intervalo de Confiança para a Mediana"
       type:  Preformatted
       
     - name:  mediantest
-      title: Median test
+      title: "Teste Mediana"
       type: Table
       rows:  1
       columns:
@@ -17,33 +17,37 @@ items:
           title: ''
           type: text
         - name: Median
+          title: Mediana
           type: number
         - name: Statistic
+          title: "Estatística"
           type: number
         - name: p
           type: number
           format: zto,pvalue
         - name: Lower
+          title: "Lim. Inf."
           type: number
         - name: Upper
+          title: "Lim. Sup."
           type: number     
           
     - name:  medianci
-      title: Confidence Intervals for Median
+      title: "Intervalos de Confiança para a Mediana"
       type: Table
       rows:  4
       columns:
         - name: type
-          title: Type
+          title: Tipo
           type: text    
         - name: ConfLevel
-          title: Confidence Level
+          title: "Nível de Confiança"
           type: number
         - name: Lower
-          title: Lower Limit
+          title: "Lim. Inf."
           type: number
         - name: Upper
-          title: Upper Limit
+          title: "Lim. Sup."
           type: number      
 
 ...

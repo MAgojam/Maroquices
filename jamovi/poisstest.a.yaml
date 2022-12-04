@@ -1,6 +1,6 @@
 ---
 name:  POISSTEST
-title: Test and Confidence Intervals for Poisson
+title: "Teste e Intervalo de Confiança para a Poisson"
 menuGroup: Extra
 version: '1.0.0'
 jas: '1.2'
@@ -8,47 +8,48 @@ jas: '1.2'
 options:
 
     - name: switch
-      title: Raw vs Summary
+      title: "Dados em Bruto vs Estatísticas"
       type: List
       options:
         - name: fromraw
-          title: Analyze raw data
+          title: "Analisar dados em bruto"
         - name: fromsummary
-          title: Enter summary data
+          title: "Analisar estatísticas"
       default: fromraw
           
     - name: data
+      title: Dados
       type: Data
 
     - name: dep
-      title: Poisson Data Variable
+      title: "Variável Poisson"
       type: Variable
       
     - name: intervalValue
-      title: Time/Space interval
+      title: "Intervalo tempo/espaço"
       type: Integer   
 
     - name: testValue
-      title: Test Value
+      title: "Valor de teste"
       type: Number
       
     - name: alt
-      title: Alternative hypothesis
+      title: "Hipótese alternativa"
       type: List
       options:
         - name: two.sided
-          title: Not equal
+          title: Bilateral
         - name: greater
-          title: greater
+          title: Maior
         - name: less
-          title: Lesser
+          title: Menor
       default: two.sided   
       
     - name: ci
-      title: Confidence Intervals
+      title: "Intervalos de Confiança"
       type: List
       options:
-        - title: Exact
+        - title: Exato
           name:  exact
         - title: Wilson
           name:  score
@@ -58,7 +59,7 @@ options:
       
     
     - name: conf
-      title: Confidence level
+      title: "Nível de Confiança"
       type: Number
       min: 0.0
       max: 1

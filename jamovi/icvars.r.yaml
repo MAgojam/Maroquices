@@ -1,15 +1,15 @@
 ---
 name:  ICVARS
-title: Confidence Interval for Variances
+title: "Intervalo de Confiança para Variâncias"
 jrs:   '1.1'
 
 items:
     - name:  text
-      title: Confidence Interval for Variances
+      title: "Intervalo de Confiança para Variâncias"
       type:  Preformatted
       
     - name:  icvars
-      title: Confidence Interval for Variances
+      title: "Intervalo de Confiança para Variâncias"
       type: Table
       rows:  3
       columns:
@@ -17,14 +17,17 @@ items:
           title: ''
           type: text
         - name: group
-          title: 'Group'
+          title: 'Grupo'
           type: text
         - name: n
           type: integer
         - name: Variance
+          title: 'Variância'
           type: number
         - name: Lower
+          title: "Lim. Inf."
           type: number
         - name: Upper
+          title: "Lim. Sup."
           type: number
 ...

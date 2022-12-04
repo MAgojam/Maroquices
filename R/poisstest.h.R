@@ -105,7 +105,7 @@ POISSTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             super$initialize(
                 options=options,
                 name="",
-                title="Test and Confidence Intervals for Poisson")
+                title="Teste e Intervalo de Confiança para a Poisson")
             self$add(jmvcore::Preformatted$new(
                 options=options,
                 name="text",
@@ -113,7 +113,7 @@ POISSTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             self$add(jmvcore::Table$new(
                 options=options,
                 name="poissontest",
-                title="Poisson test",
+                title="Teste de Poisson",
                 rows=1,
                 columns=list(
                     list(
@@ -122,15 +122,15 @@ POISSTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                         `type`="text"),
                     list(
                         `name`="NumberofEvents", 
-                        `title`="Number of Events", 
+                        `title`="N\u00FAmero de eventos", 
                         `type`="integer"),
                     list(
                         `name`="Intervalbase", 
-                        `title`="Interval", 
+                        `title`="Intervalo", 
                         `type`="integer"),
                     list(
                         `name`="Eventrate", 
-                        `title`="Event rate", 
+                        `title`="Taxa de Eventos", 
                         `type`="number"),
                     list(
                         `name`="p", 
@@ -138,14 +138,16 @@ POISSTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                         `format`="zto,pvalue"),
                     list(
                         `name`="Lower", 
+                        `title`="Lim. Inf.", 
                         `type`="number"),
                     list(
                         `name`="Upper", 
+                        `title`="Lim. Inf.", 
                         `type`="number"))))
             self$add(jmvcore::Table$new(
                 options=options,
                 name="poissonci",
-                title="Confidence Intervals for Poisson",
+                title="Intervalos de Confian\u00E7a para a Poisson",
                 rows=3,
                 columns=list(
                     list(
@@ -154,16 +156,18 @@ POISSTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                         `type`="text"),
                     list(
                         `name`="method", 
-                        `title`="Method", 
+                        `title`="M\u00E9todo", 
                         `type`="text"),
                     list(
                         `name`="lambda", 
                         `type`="number"),
                     list(
                         `name`="Lower", 
+                        `title`="Lim. Inf.", 
                         `type`="number"),
                     list(
                         `name`="Upper", 
+                        `title`="Lim. Sup.", 
                         `type`="number"))))}))
 
 POISSTESTBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
@@ -186,7 +190,7 @@ POISSTESTBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 requiresMissings = FALSE)
         }))
 
-#' Test and Confidence Intervals for Poisson
+#' Teste e Intervalo de Confiança para a Poisson
 #'
 #' 
 #' @param switch .

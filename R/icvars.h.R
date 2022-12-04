@@ -55,15 +55,15 @@ ICVARSResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             super$initialize(
                 options=options,
                 name="",
-                title="Confidence Interval for Variances")
+                title="Intervalo de Confiança para Variâncias")
             self$add(jmvcore::Preformatted$new(
                 options=options,
                 name="text",
-                title="Confidence Interval for Variances"))
+                title="Intervalo de Confian\u00E7a para Vari\u00E2ncias"))
             self$add(jmvcore::Table$new(
                 options=options,
                 name="icvars",
-                title="Confidence Interval for Variances",
+                title="Intervalo de Confian\u00E7a para Vari\u00E2ncias",
                 rows=3,
                 columns=list(
                     list(
@@ -72,19 +72,22 @@ ICVARSResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                         `type`="text"),
                     list(
                         `name`="group", 
-                        `title`="Group", 
+                        `title`="Grupo", 
                         `type`="text"),
                     list(
                         `name`="n", 
                         `type`="integer"),
                     list(
                         `name`="Variance", 
+                        `title`="Vari\u00E2ncia", 
                         `type`="number"),
                     list(
                         `name`="Lower", 
+                        `title`="Lim. Inf.", 
                         `type`="number"),
                     list(
                         `name`="Upper", 
+                        `title`="Lim. Sup.", 
                         `type`="number"))))}))
 
 ICVARSBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
@@ -107,7 +110,7 @@ ICVARSBase <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 requiresMissings = FALSE)
         }))
 
-#' Confidence Interval for Variances
+#' Intervalo de Confiança para Variâncias
 #'
 #' 
 #' @param data .

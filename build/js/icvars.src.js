@@ -3,7 +3,7 @@
 
 'use strict';
 
-const options = [{"name":"data","type":"Data"},{"name":"dep","title":"Dependent","type":"Variable"},{"name":"group","title":"Groups","type":"Variable"},{"name":"ci","type":"Number","title":"Confidence level","min":0.01,"max":0.99,"default":0.95}];
+const options = [{"name":"data","type":"Data"},{"name":"dep","title":"Dependente","type":"Variable"},{"name":"group","title":"Grupos","type":"Variable"},{"name":"ci","type":"Number","title":"Nível de Confiança","min":0.01,"max":0.99,"default":0.95}];
 
 const view = function() {
     
@@ -21,7 +21,7 @@ const view = function() {
 
 view.layout = ui.extend({
 
-    label: "Confidence Interval for Variances",
+    label: "Intervalo de Confiança para Variâncias",
     jus: "3.0",
     type: "root",
     stage: 0, //0 - release, 1 - development, 2 - proposed
@@ -35,7 +35,7 @@ view.layout = ui.extend({
 				{
 					type: DefaultControls.TargetLayoutBox,
 					typeName: 'TargetLayoutBox',
-					label: "Dependent",
+					label: "Dependente",
 					controls: [
 						{
 							type: DefaultControls.VariablesListBox,
@@ -49,7 +49,7 @@ view.layout = ui.extend({
 				{
 					type: DefaultControls.TargetLayoutBox,
 					typeName: 'TargetLayoutBox',
-					label: "Groups",
+					label: "Grupos",
 					controls: [
 						{
 							type: DefaultControls.VariablesListBox,
