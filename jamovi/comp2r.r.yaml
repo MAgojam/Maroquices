@@ -1,0 +1,26 @@
+---
+name:  Comp2R
+title: ""
+jrs:   '1.1'
+
+items:
+    - name: comp2R
+      title: Comparação de duas correlações
+      type: Table
+      rows: 1
+      columns:
+        - name: r1
+          title: "r1"
+          type: number
+        - name: r2
+          title: "r2"
+          type: number              
+        - name: Z
+          title: z
+          type: number
+        - name: P
+          title: p
+          type: number
+          format: zto,pvalue    
+
+...

@@ -39,11 +39,11 @@ ICVARSClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
             
            table <- self$results$icvars
            
-           tabTitStr <- ('Confidence Interval for Variances - {dep}')
+           tabTitStr <- ('Intervalos de Conf. Varianc. - {dep}')
            tabTit <- jmvcore::format(tabTitStr, dep=self$options$dep)
            table$setTitle(tabTit)
            
-           ciTitle <- paste0(self$options$ci*100, '% Confidence Interval')
+           ciTitle <- paste0("Intervalo de Conf. a ",self$options$ci*100, '%')
            table$getColumn('Lower')$setSuperTitle(ciTitle)
            table$getColumn('Upper')$setSuperTitle(ciTitle)
            table$setRow(rowNo=1, values=list(

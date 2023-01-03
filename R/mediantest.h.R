@@ -68,7 +68,7 @@ MEDIANTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             super$initialize(
                 options=options,
                 name="",
-                title="Teste e Intervalo de Confiança para a Mediana")
+                title="")
             self$add(jmvcore::Preformatted$new(
                 options=options,
                 name="text",

@@ -1,0 +1,62 @@
+title: Teste de Friedman com Post-Hocs
+name: FrdTest
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: VariableSupplier
+    persistentItems: false
+    stretchFactor: 1
+    children:
+      - type: TargetLayoutBox
+        label: Medidas Repetidas
+        children:
+          - type: VariablesListBox
+            name: vars
+            isTarget: true
+  - type: CollapseBox
+    label: Testes Post-Hoc
+    collapsed: true
+    stretchFactor: 1
+    children:
+      - type: LayoutBox
+        margin: large
+        stretchFactor: 1
+        children:
+          - type: LayoutBox
+            cell:
+              column: 0
+              row: 0
+            stretchFactor: 1
+            children:
+              - type: Label
+                label: Testes Post-Hoc
+                children:
+                  - type: RadioButton
+                    name: nenhum
+                    optionName: posts
+                    optionPart: Nenhum
+                    label: Nenhum
+                  - type: RadioButton
+                    name: dunn
+                    optionName: posts
+                    optionPart: Dunn
+                    label: Dunn
+                  - type: RadioButton
+                    name: durbin
+                    optionName: posts
+                    optionPart: Durbin-Conover
+                    label: Durbin-Conover
+      - type: LayoutBox
+        margin: large
+        stretchFactor: 1
+        children:
+          - type: LayoutBox
+            cell:
+              column: 0
+              row: 0
+            stretchFactor: 1
+            children:
+              - type: ComboBox
+                name: method
+

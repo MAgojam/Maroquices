@@ -1,8 +1,8 @@
-title: Intervalo de Confiança para Variâncias
+title: "Intervalo de Confiança para Variâncias"
 name: ICVARS
 jus: '3.0'
 stage: 0
-compilerMode: aggressive
+compilerMode: tame
 children:
   - type: VariableSupplier
     persistentItems: false

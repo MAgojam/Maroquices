@@ -8,7 +8,7 @@ authors:
 maintainer: The package maintainer <jpmaroco@gmail.com>
 date: '2022-11-04'
 type: R
-description: jamovi modules for the book.
+description: Módulos Extra para acompanhar Marôco(2023)
 analyses:
   - title: Intervalo de Confiança para Variâncias
     name: ICVARS
@@ -25,11 +25,21 @@ analyses:
     ns: Extra
     menuGroup: Extra
     menuTitle: Teste e Intervalo de Confiança para a Poisson
+  - title: Comparação de duas Correlações
+    name: Comp2R
+    ns: Extra
+    menuGroup: Extra
+    menuTitle: Comparação de duas Correlações
   - title: ANOVA em Ordens de Kruskal-Wallis com testes Post-hoc
     name: KWTest
     ns: Extra
     menuGroup: Extra
     menuTitle: ANOVA em Ordens de Kruskal-Wallis com testes Post-hoc
+  - title: Teste de Friedman com Post-Hocs
+    name: FrdTest
+    ns: Extra
+    menuGroup: Extra
+    menuTitle: Teste de Friedman com Post-Hocs
 usesNative: true
 minApp: 1.0.8
 

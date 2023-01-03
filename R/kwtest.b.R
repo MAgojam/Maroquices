@@ -62,7 +62,10 @@ KWTestClass <- if (requireNamespace('jmvcore', quietly=TRUE)) R6::R6Class(
             result <- kruskal.test(formula, data)
             es <- (result$statistic - k + 1) / (n-k)
             
-            kw <- coin::kruskal_test(formula, data)
+            #rdep <- rank(depColumn)
+            #px <- summary(aov(rdep~factor(groupColumn)))[[1]][[5]][1]
+            
+            kw <- coin::kruskal_test(formula, data,distribution = approximate(nresample = 10000)) #Only works with two groups
             px <- coin::pvalue(kw)[1]
             #self$results$text$setContent(result)
             

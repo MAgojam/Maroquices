@@ -8,4 +8,4 @@ Description: Jamovi modules para acompanhar o livro "Fundamentos de Estatística
 License: free 
 Encoding: UTF-8
 LazyData: true
-Imports: jmvcore (>= 0.8.5), R6, BSDA, DescTools, FSA, coin, NSM3, conover.test
+Imports: jmvcore (>= 0.8.5), R6, BSDA, DescTools, FSA, coin, NSM3, conover.test, PMCMRplus

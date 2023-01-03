@@ -9,5 +9,11 @@ export(MEDIANTESTOptions)
 export(POISSTESTClass)
 export(POISSTESTOptions)
 
+export(Comp2RClass)
+export(Comp2ROptions)
+
 export(KWTestClass)
 export(KWTestOptions)
+
+export(FrdTestClass)
+export(FrdTestOptions)

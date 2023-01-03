@@ -1,6 +1,6 @@
 ---
 name:  ICVARS
-title: "Intervalo de Confiança para Variâncias"
+title: ""
 jrs:   '1.1'
 
 items:
@@ -14,15 +14,15 @@ items:
       rows:  3
       columns:
         - name: var
-          title: ''
+          title: ""
           type: text
         - name: group
-          title: 'Grupo'
+          title: "Grupo"
           type: text
         - name: n
           type: integer
         - name: Variance
-          title: 'Variância'
+          title: "Variância"
           type: number
         - name: Lower
           title: "Lim. Inf."

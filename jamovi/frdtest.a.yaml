@@ -1,0 +1,51 @@
+---
+name:  FrdTest
+title: Teste de Friedman com Post-Hocs
+menuGroup: Extra
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: vars
+      title: "Medidas Repetidas"
+      type: Variables
+      required: true
+      suggested:
+        - continuous
+        - ordinal
+      permitted:
+        - numeric
+      description:
+          ui: >
+            As medidas repetidas. Têm que ser pelo menos ordinal.
+          R: >
+            As medidas repetidas. Têm que ser pelo menos ordinal.
+
+    - name: posts
+      title: Testes Post-hoc
+      type: List
+      options:
+        - Nenhum
+        - Dunn
+        - Durbin-Conover
+      default: "Nenhum"
+      description:
+          ui: >
+            Faz testes post-hoc.
+          R: >
+            Teste de Dunn sem correção e com correção a escolher (Bonferroni-Dunn é a mais usual)
+    - name: method
+      title: "Correção p-value"
+      type: List
+      options:
+        - title: Bonferroni
+          name:  bonferroni
+        - title: Holm
+          name:  holm
+        - title: Benjamini e Hochberg
+          name:  BH          
+      default: "bonferroni"    
+...

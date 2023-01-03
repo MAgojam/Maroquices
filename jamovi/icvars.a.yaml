@@ -10,11 +10,11 @@ options:
       type: Data
 
     - name: dep
-      title: Dependente
+      title: "Dependente"
       type: Variable
 
     - name: group
-      title: Grupos
+      title: "Grupos"
       type: Variable
       
     - name: ci

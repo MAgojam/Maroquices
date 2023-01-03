@@ -9,5 +9,5 @@ License: free
 Encoding: UTF-8
 LazyData: true
 Imports: jmvcore (>= 0.8.5), R6, BSDA, DescTools, FSA, coin, NSM3,
-        conover.test
-Built: R 4.1.2; ; 2022-12-02 12:57:54 UTC; windows
+        conover.test, PMCMRplus
+Built: R 4.1.2; ; 2023-01-03 18:41:32 UTC; windows

@@ -9,7 +9,7 @@ KWTestOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             dep = NULL,
             group = NULL,
             posts = "Nenhum",
-            method = NULL, ...) {
+            method = "bonferroni", ...) {
 
             super$initialize(
                 package="Extra",
@@ -48,7 +48,8 @@ KWTestOptions <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
                 options=list(
                     "bonferroni",
                     "sidak",
-                    "holm"))
+                    "holm"),
+                default="bonferroni")
 
             self$.addOption(private$..dep)
             self$.addOption(private$..group)
@@ -247,7 +248,7 @@ KWTest <- function(
     dep,
     group,
     posts = "Nenhum",
-    method) {
+    method = "bonferroni") {
 
     if ( ! requireNamespace("jmvcore", quietly=TRUE))
         stop("KWTest requires jmvcore to be installed (restart may be required)")

@@ -1,0 +1,43 @@
+title: Comparação de duas Correlações
+name: Comp2R
+jus: '3.0'
+stage: 0
+compilerMode: tame
+children:
+  - type: LayoutBox
+    cell:
+      column: 0
+      row: 0
+    stretchFactor: 1
+    children:
+      - type: Label
+        label: Amostra 1
+        children:
+          - type: TextBox
+            name: r1
+            format: number
+          - type: TextBox
+            name: n1
+            format: number
+  - type: LayoutBox
+    cell:
+      column: 1
+      row: 0
+    stretchFactor: 1
+    children:
+      - type: Label
+        label: Amostra 2
+        children:
+          - type: TextBox
+            name: r2
+            format: number
+          - type: TextBox
+            name: n2
+            format: number
+  - type: LayoutBox
+    margin: large
+    children:
+      - type: Label
+        label: Hipótese Alternativa
+      - type: ComboBox
+        name: alt

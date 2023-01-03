@@ -105,11 +105,11 @@ POISSTESTResults <- if (requireNamespace("jmvcore", quietly=TRUE)) R6::R6Class(
             super$initialize(
                 options=options,
                 name="",
-                title="Teste e Intervalo de Confiança para a Poisson")
+                title="")
             self$add(jmvcore::Preformatted$new(
                 options=options,
                 name="text",
-                title="Test and Confidence Intervals for Poisson"))
+                title=""))
             self$add(jmvcore::Table$new(
                 options=options,
                 name="poissontest",

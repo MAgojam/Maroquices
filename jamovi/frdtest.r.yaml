@@ -1,0 +1,79 @@
+---
+name:  FrdTest
+title: Teste de Friedman com Post-Hocs
+jrs:   '1.1'
+
+items:
+    - name: Frd
+      title: Teste de Friedman
+      type: Table
+      rows: 1
+      visible: True 
+      clearWith:
+        - vars
+      columns:
+        - name: chiSq
+          title: Fr
+          type: number
+        - name: df
+          title: gl
+          type: integer
+        - name: p
+          title: Pasymp
+          type: number
+          format: zto,pvalue
+        - name: px
+          title: Pexact
+          type: number  
+        - name: es
+          title: ω
+          type: number
+
+    - name: dunn
+      title: "Teste Post-hoc de Dunn para amostras emparelhadas"
+      type: Table
+      rows: nComps
+      visible: False   
+      columns:
+        - name: var
+          title: 'Comparação'
+          type: text
+        - name: Z
+          type: number
+        - name: p
+          type: number
+          format: zto,pvalue
+        - name: Padj
+          title: Paj
+          type: number
+          format: zto,pvalue
+          
+    - name: durbin
+      title: "Testes Post-hoc de Durbin-Conover"
+      type: Table
+      rows: nComps
+      visible: False  
+      columns:
+        - name: var
+          title: 'Comparação'
+          type: text
+        - name: t
+          type: number
+        - name: P
+          type: number
+          format: zto,pvalue
+        - name: Padj
+          title: Paj
+          type: number
+          format: zto,pvalue   
+
+    - name: plot
+      title: Box Plots
+      type: Image
+      visible: False   
+      width:  450
+      height: 300
+      renderFun: .plot       
+
+
+...

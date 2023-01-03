@@ -1,11 +1,11 @@
 ---
 name:  POISSTEST
-title: "Teste e Intervalo de Confiança para a Poisson"
+title: ""
 jrs:   '1.1'
 
 items:
     - name:  text
-      title: Test and Confidence Intervals for Poisson
+      title: ""
       type:  Preformatted
 
     - name:  poissontest
